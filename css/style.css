@@ -6,12 +6,21 @@
   padding: 0;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 img {
   max-width: 100%;
 }
 
 li {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
 }
 
 /* # UTILS */
@@ -24,8 +33,54 @@ li {
 }
 
 .btn {
+  background-color: #0061ff;
+  border: 1px solid #0061ff;
+  color: white;
+  padding: 5px 15px;
+  font-size: 1rem;
 }
 
 /* # PAGE HEADER */
 
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 30px;
+  padding: 1.5rem;
+  color: #353535;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  /* ! DEBUG */
+  /* background-color: burlywood;
+  border: 1px dashed black; */
+}
+
+.header-block {
+  display: flex;
+  justify-content: flex-start;
+
+  /* ! DEBUG */
+  /* background-color: brown;
+  border: 1px dashed black; */
+}
+
+.header-nav li {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 1rem;
+
+  /* ! DEBUG */
+  /* background-color: brown;
+  border: 1px dashed black; */
+}
+
 /* # HERO SECTION */
+
+.hero-section {
+  /* ! DEBUG */
+  background-color: #b4d0e7;
+}
