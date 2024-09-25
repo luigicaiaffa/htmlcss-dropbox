@@ -45,13 +45,15 @@ a {
 /* # PAGE HEADER */
 
 .page-header {
+  background-color: white;
+  color: #353535;
+  line-height: 30px;
+  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  line-height: 30px;
-  padding: 1.5rem;
-  color: #353535;
-  position: sticky;
+  position: fixed;
+  z-index: 1;
   top: 0;
   right: 0;
   left: 0;
@@ -86,7 +88,7 @@ a {
 
 .hero-title {
   padding-bottom: 50px;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .hero-blocks {
@@ -106,5 +108,48 @@ a {
 
   /* *DEBUG */
   background-color: brown;
+  border: 1px dashed black;
+}
+
+/* ! MAIN */
+
+/* # PLAN CARD SECTION */
+
+.plan-card-section > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.plan-card-section > h2 {
+  font-size: 3rem;
+
+  /* *DEBUG */
+  margin: 50px auto;
+  background-color: goldenrod;
+  border: 1px dashed black;
+}
+
+.plan-card-section > .label {
+  /* *DEBUG */
+  margin: 50px auto;
+}
+
+.plan-card {
+  flex-grow: 1;
+
+  /* *DEBUG */
+  background-color: goldenrod;
+  border: 1px dashed black;
+  height: 800px;
+}
+
+.plan-card-bottom {
+  /* *DEBUG */
+  margin-top: 80px;
+  height: 300px;
+  width: 100%;
+  background-color: goldenrod;
   border: 1px dashed black;
 }
