@@ -1,4 +1,4 @@
-/* # RESET */
+/* ! RESET */
 
 * {
   box-sizing: border-box;
@@ -23,7 +23,7 @@ a {
   color: currentColor;
 }
 
-/* # UTILS */
+/* ! UTILS */
 
 .container {
   margin: 0 auto;
@@ -40,6 +40,8 @@ a {
   font-size: 1rem;
 }
 
+/* ! HEADER */
+
 /* # PAGE HEADER */
 
 .page-header {
@@ -53,29 +55,17 @@ a {
   top: 0;
   right: 0;
   left: 0;
-
-  /* ! DEBUG */
-  /* background-color: burlywood;
-  border: 1px dashed black; */
 }
 
 .header-block {
   display: flex;
   justify-content: flex-start;
-
-  /* ! DEBUG */
-  /* background-color: brown;
-  border: 1px dashed black; */
 }
 
 .header-nav li {
   display: inline-block;
   padding: 0 2rem;
   font-size: 1rem;
-
-  /* ! DEBUG */
-  /* background-color: brown;
-  border: 1px dashed black; */
 }
 
 /* # HERO SECTION */
@@ -83,14 +73,14 @@ a {
 .hero-section {
   padding-top: 150px;
 
-  /* ! DEBUG */
+  /* *DEBUG */
   background-color: #b4d0e7;
 }
 
 .hero-section > .container {
   width: 1500px;
 
-  /* ! DEBUG */
+  /* *DEBUG */
   border: 1px dashed black;
 }
 
@@ -106,7 +96,7 @@ a {
 .sm-hero-block {
   flex-basis: 30%;
 
-  /* ! DEBUG */
+  /* *DEBUG */
   background-color: goldenrod;
   border: 1px dashed black;
 }
@@ -114,7 +104,7 @@ a {
 .lg-hero-block {
   flex-basis: 70%;
 
-  /* ! DEBUG */
+  /* *DEBUG */
   background-color: brown;
   border: 1px dashed black;
 }
