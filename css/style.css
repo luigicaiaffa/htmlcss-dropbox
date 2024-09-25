@@ -36,8 +36,12 @@ a {
   background-color: #0061ff;
   border: 1px solid #0061ff;
   color: white;
-  padding: 5px 15px;
+  padding: 7px 15px;
   font-size: 1rem;
+}
+
+.btn.lg {
+  padding: 10px 15px;
 }
 
 .container h2 {
@@ -55,8 +59,8 @@ a {
 
 .page-header {
   background-color: white;
-  color: #353535;
-  line-height: 30px;
+  color: #202020;
+  line-height: 35px;
   padding: 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -79,45 +83,64 @@ a {
   font-size: 1rem;
 }
 
+.logo-header {
+  width: 150px;
+}
+
 /* # HERO SECTION */
 
 .hero-section {
-  padding-top: 150px;
-
-  /* *DEBUG */
+  padding-top: 10rem;
   background-color: #b4d0e7;
 }
 
 .hero-section > .container {
   width: 1500px;
-
-  /* *DEBUG */
-  border: 1px dashed black;
 }
 
 .hero-title {
-  padding-bottom: 50px;
   font-size: 5rem;
+  margin-right: 4rem;
 }
 
 .hero-blocks {
   display: flex;
-}
-
-.sm-hero-block {
-  flex-basis: 30%;
-
-  /* *DEBUG */
-  background-color: goldenrod;
-  border: 1px dashed black;
+  line-height: 1.6rem;
+  color: #202020;
+  /* position: relative;
+  top: 6rem; */
 }
 
 .lg-hero-block {
   flex-basis: 70%;
+  position: relative;
+  top: 6rem;
+}
 
-  /* *DEBUG */
-  background-color: brown;
-  border: 1px dashed black;
+.sm-hero-block {
+  flex-basis: 30%;
+}
+
+.sm-hero-block > p {
+  font-size: 1.1rem;
+  margin-top: 6rem;
+  margin-right: 3rem;
+}
+
+.sm-hero-block > .btn {
+  margin-top: 2rem;
+}
+
+.sm-hero-block > span {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  display: block;
+}
+
+.sm-hero-block > .arrow-down {
+  margin-top: 10rem;
+  font-size: 1.7rem;
+  color: black;
 }
 
 /* ! MAIN */
@@ -130,15 +153,6 @@ a {
   align-items: center;
   gap: 80px;
 }
-
-/* .plan-card-section > h2 {
-  font-size: 2.5rem;
-
-  DEBUG 
-  margin: 50px auto;
-  background-color: goldenrod;
-  border: 1px dashed black;
-} */
 
 .plan-card-section > .label {
   /* *DEBUG */
@@ -189,15 +203,6 @@ a {
 }
 
 /* # TUTORIAL CARD SECTION */
-
-/* .tutorial-card-section > h2 {
-  font-size: 2.5rem;
-
-  /* *DEBUG 
-  margin: 50px auto;
-  background-color: goldenrod;
-  border: 1px dashed black;
-} */
 
 .tutorial-card-section > .container {
   display: flex;
