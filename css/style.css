@@ -40,6 +40,15 @@ a {
   font-size: 1rem;
 }
 
+.container h2 {
+  font-size: 2.5rem;
+
+  /* *DEBUG */
+  margin: 50px auto;
+  background-color: goldenrod;
+  border: 1px dashed black;
+}
+
 /* ! HEADER */
 
 /* # PAGE HEADER */
@@ -122,14 +131,14 @@ a {
   gap: 80px;
 }
 
-.plan-card-section > h2 {
-  font-size: 3rem;
+/* .plan-card-section > h2 {
+  font-size: 2.5rem;
 
-  /* *DEBUG */
+  DEBUG 
   margin: 50px auto;
   background-color: goldenrod;
   border: 1px dashed black;
-}
+} */
 
 .plan-card-section > .label {
   /* *DEBUG */
@@ -153,3 +162,60 @@ a {
   background-color: goldenrod;
   border: 1px dashed black;
 }
+
+/* # IMG BOX SECTION */
+
+.img-box-section > .container {
+  display: flex;
+
+  /* *DEBUG */
+  margin-top: 80px;
+}
+
+.lg-block {
+  width: 60%;
+
+  /* *DEBUG */
+  background-color: goldenrod;
+  border: 1px dashed black;
+}
+
+.sm-block {
+  width: 40%;
+
+  /* *DEBUG */
+  background-color: goldenrod;
+  border: 1px dashed black;
+}
+
+/* # TUTORIAL CARD SECTION */
+
+/* .tutorial-card-section > h2 {
+  font-size: 2.5rem;
+
+  /* *DEBUG 
+  margin: 50px auto;
+  background-color: goldenrod;
+  border: 1px dashed black;
+} */
+
+.tutorial-card-section > .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.tutorial-card {
+  flex-basis: 30%;
+
+  /* *DEBUG */
+  background-color: goldenrod;
+  border: 1px dashed black;
+}
+
+/* # TEAM SECTION */
+
+/* # FREE TRIAL SECTION */
+
+/* # FAQ SECTION */
