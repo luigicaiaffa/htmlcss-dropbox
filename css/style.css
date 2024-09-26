@@ -7,14 +7,14 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 img {
   max-width: 100%;
 }
 
-li {
+ul {
   list-style-type: none;
 }
 
@@ -26,31 +26,34 @@ a {
 /* ! UTILS */
 
 .container {
-  margin: 0 auto;
-  padding: 0 10px;
+  /* margin: 0 auto; */
+  padding: 0 0;
   width: 1200px;
   max-width: 100%;
+
+  /* *DEBUG */
+  margin: 30px auto;
 }
 
 .btn {
   background-color: #0061ff;
   border: 1px solid #0061ff;
   color: white;
-  padding: 7px 15px;
-  font-size: 1rem;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
 
-.btn.lg {
-  padding: 10px 15px;
+.btn.sm {
+  padding: 7px 15px;
 }
 
 .container h2 {
   font-size: 2.5rem;
 
   /* *DEBUG */
-  /* margin: 50px auto;
   background-color: goldenrod;
-  border: 1px dashed black; */
+  border: 1px dashed black;
 }
 
 /* ! HEADER */
@@ -81,11 +84,12 @@ a {
 .header-nav li {
   display: inline-block;
   padding: 0 2rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .logo-header {
   width: 160px;
+  margin-right: 20px;
 }
 
 /* # HERO SECTION */
@@ -101,14 +105,13 @@ a {
 
 .hero-title {
   font-size: 5rem;
+  margin-right: 10rem;
 }
 
 .hero-blocks {
   display: flex;
   line-height: 1.6rem;
   color: #202020;
-  /* position: relative;
-  top: 6rem; */
 }
 
 .lg-hero-block {
@@ -119,26 +122,29 @@ a {
 
 .sm-hero-block {
   flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.sm-hero-block > p {
-  font-size: 1.1rem;
+.sm-hero-block > .hero-text > p {
+  font-size: 1.2rem;
   margin-top: 6rem;
   margin-right: 3rem;
 }
 
-.sm-hero-block > .btn {
-  margin-top: 2rem;
+.sm-hero-block > .hero-text > .btn {
+  margin-top: 2.5rem;
 }
 
-.sm-hero-block > span {
-  font-size: 1.1rem;
-  margin-top: 2rem;
+.sm-hero-block > .hero-text > span {
+  font-size: 1.2rem;
+  margin-top: 2.5rem;
   display: block;
 }
 
 .sm-hero-block > .arrow-down {
-  margin-top: 10rem;
+  margin-bottom: 2rem;
   font-size: 1.7rem;
   color: black;
 }
@@ -151,11 +157,11 @@ a {
   margin-top: 12rem;
 }
 
-.plan-card-section > .label {
+.plan-card-section > .plan-type {
   margin: 4rem 0 3rem;
 }
 
-.label > label {
+.plan-type > label {
   padding-right: 4rem;
 }
 
@@ -178,16 +184,15 @@ a {
 
 .plan-card-bottom {
   /* *DEBUG */
-  margin-top: 80px;
-  height: 300px;
+  padding: 30px;
   width: 100%;
   background-color: goldenrod;
   border: 1px dashed black;
 }
 
-/* # IMG BOX SECTION */
+/* # PARTNER SECTION */
 
-.img-box-section > .container {
+.partner-section > .container {
   display: flex;
 
   /* *DEBUG */
@@ -227,9 +232,80 @@ a {
   border: 1px dashed black;
 }
 
-/* # TEAM SECTION */
+/* # BRAND SECTION */
 
-/* # DESIGNIT SECTION */
+.brand-container {
+  display: flex;
+}
+
+.brand-col {
+  width: calc(100vw / 3);
+  height: calc(100vw / 3);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brand-content > .brand-col {
+  display: block;
+  background-color: #e4e4e4;
+}
+
+.brand-logo {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+/* * SVG UTILS * */
+
+#fill-none {
+  fill: none;
+}
+
+.brand-section svg g path {
+  fill: white;
+}
+
+.brand-section svg {
+  align-self: center;
+  width: 50%;
+  height: 50%;
+}
+
+/* * BRAND COLORS * */
+
+.brand-logo.designit {
+  background-color: #a2d39b;
+  border: 15px solid #d1e9cd;
+}
+
+.brand-logo.arizona-university {
+  background-color: #61082b;
+}
+
+.brand-logo.florida-university {
+  background-color: #0093ce;
+}
+
+.brand-logo.topps {
+  background-color: #ff1c1c;
+}
+
+.brand-logo.world-bicycle {
+  background-color: #d5001f;
+}
+
+.brand-logo.hearstcorp {
+  background-color: #b4d0e7;
+}
+
+.brand-logo.lonely-planet {
+  background-color: #0d2481;
+}
+
+.brand-logo.clear-channel {
+  background-color: #ffd830;
+}
 
 /* # FREE TRIAL SECTION */
 
