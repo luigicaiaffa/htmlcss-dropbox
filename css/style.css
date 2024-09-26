@@ -52,12 +52,26 @@ hr {
   padding: 7px 15px;
 }
 
+.btn.tr {
+  background-color: white;
+  border: 1px solid #202020;
+  color: #202020;
+}
+
 .container h2 {
   font-size: 2.5rem;
 
   /* *DEBUG */
   background-color: goldenrod;
   border: 1px dashed black;
+}
+
+.container h3 {
+  font-size: 1.8rem;
+}
+
+.container p {
+  font-size: 1.1rem;
 }
 
 /* ! HEADER */
@@ -109,7 +123,6 @@ hr {
 
 .hero-title {
   font-size: 5rem;
-  margin-right: 10rem;
 }
 
 .hero-blocks {
@@ -205,18 +218,15 @@ hr {
 
 .lg-block {
   width: 60%;
-
-  /* *DEBUG */
-  background-color: goldenrod;
-  border: 1px dashed black;
 }
 
 .sm-block {
   width: 40%;
+  padding: 3rem;
+}
 
-  /* *DEBUG */
-  background-color: goldenrod;
-  border: 1px dashed black;
+.sm-block > p {
+  padding: 2rem 0;
 }
 
 /* # TUTORIAL CARD SECTION */
@@ -237,6 +247,12 @@ hr {
 }
 
 /* # BRAND SECTION */
+
+.link-brand {
+  text-decoration: underline;
+  margin: 4rem 0 7rem 0;
+  display: block;
+}
 
 .brand-container {
   display: flex;
