@@ -30,13 +30,10 @@ hr {
 /* ! UTILS */
 
 .container {
-  /* margin: 0 auto; */
+  margin: 0 auto;
   padding: 0 0;
   width: 1200px;
   max-width: 100%;
-
-  /* *DEBUG */
-  margin: 30px auto;
 }
 
 .btn {
@@ -58,12 +55,13 @@ hr {
   color: #202020;
 }
 
+.btn.tr.lg {
+  border: none;
+  padding: 15px 50px;
+}
+
 .container h2 {
   font-size: 2.5rem;
-
-  /* *DEBUG */
-  background-color: goldenrod;
-  border: 1px dashed black;
 }
 
 .container h3 {
@@ -200,20 +198,12 @@ hr {
 }
 
 .plan-card-bottom {
-  /* *DEBUG */
-  padding: 30px;
-  width: 100%;
-  background-color: goldenrod;
-  border: 1px dashed black;
 }
 
 /* # PARTNER SECTION */
 
 .partner-section > .container {
   display: flex;
-
-  /* *DEBUG */
-  margin-top: 80px;
 }
 
 .lg-block {
@@ -240,10 +230,6 @@ hr {
 
 .tutorial-card {
   flex-basis: 30%;
-
-  /* *DEBUG */
-  background-color: goldenrod;
-  border: 1px dashed black;
 }
 
 /* # BRAND SECTION */
@@ -339,7 +325,42 @@ hr {
 
 /* # FREE TRIAL SECTION */
 
+.free-trial-section {
+  background-color: #b4d0e7;
+  padding: 8rem 0;
+  margin-bottom: 10rem;
+}
+
+.free-trial-section > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.free-trial-section > .container > h2 {
+  color: #a1164c;
+}
+
 /* # FAQ SECTION */
+
+.faq-section h2 {
+}
+
+.faq-line:nth-child(2) {
+  border-top: 1px solid #202020;
+  margin-top: 3rem;
+}
+
+.faq-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  border-bottom: 1px solid #202020;
+}
+
+.faq-line i {
+  padding-right: 2rem;
+}
 
 /* !FOOTER */
 
