@@ -23,6 +23,10 @@ a {
   color: currentColor;
 }
 
+hr {
+  width: 20%;
+}
+
 /* ! UTILS */
 
 .container {
@@ -245,15 +249,25 @@ a {
   flex-wrap: wrap;
 }
 
-.brand-content > .brand-col {
-  display: block;
-  background-color: #e4e4e4;
-}
-
 .brand-logo {
   display: flex;
   justify-content: center;
   width: 50%;
+}
+
+/* * MIDDLE COLUMN * */
+
+.brand-content > .brand-col {
+  background-color: #f0f0f0;
+  padding: 3rem 5rem;
+  display: block;
+  font-size: 1.1rem;
+}
+
+.brand-content > .brand-col > p,
+.brand-content > .brand-col > hr,
+.brand-content > .brand-col > div {
+  margin-top: 3rem;
 }
 
 /* * SVG UTILS * */
