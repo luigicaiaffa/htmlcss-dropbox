@@ -236,7 +236,7 @@ footer a {
 }
 
 .recap-list-title {
-  font-weight: bold #666666;
+  font-weight: bold;
   padding-bottom: 1rem;
 }
 
@@ -404,7 +404,8 @@ footer a {
 
 /* # FAQ SECTION */
 
-.faq-section h2 {
+.faq-section {
+  margin-bottom: 10rem;
 }
 
 .faq-line:nth-child(2) {
@@ -425,6 +426,34 @@ footer a {
 
 /* !FOOTER */
 
+.page-footer {
+  background-color: black;
+  color: white;
+}
+
+.page-footer > .container.upper-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 0;
+}
+
 /* # FOOTER NAV */
 
+.page-footer ul .footer-list-title {
+  margin-bottom: 2rem;
+}
+
+.page-footer ul li {
+  margin-bottom: 1.5rem;
+}
+
 /* # LOWER FOOTER */
+
+.container.lower-footer div {
+  color: #afafaf;
+  padding: 3rem 0;
+}
+
+.container.lower-footer hr {
+  width: 10%;
+}
