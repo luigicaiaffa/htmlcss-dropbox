@@ -28,6 +28,16 @@ footer a {
   color: currentColor;
 }
 
+/* # FONT AWESOME */
+
+.fa-ul {
+  margin-left: 2em;
+}
+
+.fa-check {
+  color: #0061ff;
+}
+
 /* ! UTILS */
 
 .container {
@@ -41,13 +51,9 @@ footer a {
   background-color: #0061ff;
   border: 1px solid #0061ff;
   color: white;
-  padding: 10px 15px;
+  padding: 15px;
   font-size: 1.1rem;
   cursor: pointer;
-}
-
-.btn.sm {
-  padding: 7px 15px;
 }
 
 .btn.tr {
@@ -56,15 +62,21 @@ footer a {
   color: #202020;
 }
 
+.btn.sm {
+  padding: 7px 15px;
+}
+
 .btn.lg {
   border: none;
-  padding: 15px 50px;
+  padding: 15px 70px;
 }
 
 .btn.btn-card {
-  text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 100%;
+}
+
+.btn.btn-card.b-btn {
+  padding: 15px 51.68px;
 }
 
 .container h2 {
@@ -179,10 +191,6 @@ footer a {
   margin: 4rem 0 3rem;
 }
 
-.plan-type > label {
-  padding-right: 4rem;
-}
-
 .plan-card-section > .container {
   display: flex;
   justify-content: space-between;
@@ -193,17 +201,17 @@ footer a {
 .upper-card {
   padding: 0.8rem;
   text-align: center;
-  border-bottom: 1px solid #666666;
+  border-bottom: 1px solid #c0c0c0;
 }
 
 .plan-card {
   flex-basis: 30%;
-  border: 1px solid #666666;
+  border: 1px solid #c0c0c0;
   margin-bottom: 4rem;
 }
 
 .plan-card > .card-box {
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -215,7 +223,7 @@ footer a {
 }
 
 .card-time {
-  color: #666666;
+  color: #c0c0c0;
 }
 
 .card-feature-list {
@@ -224,6 +232,7 @@ footer a {
 
 .card-box li {
   padding: 0.6rem 0;
+  font-size: 1.05em;
 }
 
 .card-button > div,
@@ -241,7 +250,7 @@ footer a {
 }
 
 .plan-card-bottom {
-  border: 1px solid #666666;
+  border: 1px solid #c0c0c0;
   margin-bottom: 10rem;
 }
 
@@ -253,6 +262,30 @@ footer a {
 
 .card-text {
   padding-top: 3rem;
+}
+
+/* * LABEL * */
+
+input[type="radio"] {
+  display: none;
+}
+
+.plan-type > label {
+  padding-right: 4rem;
+}
+
+.circle-radio {
+  display: inline-block;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 3.5px;
+  border: 2px solid #c0c0c0;
+}
+
+[name="plan-type"]:checked + label .circle-radio {
+  border: 5px solid #0061ff;
 }
 
 /* # PARTNER SECTION */
